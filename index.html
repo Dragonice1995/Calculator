@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Калькулятор</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<input type="text" id="expression" value="0" readonly><br>
+	<input value="(" type="button" onclick="addCharacter(this.value); this.blur()">
+	<input value=")" type="button" onclick="addCharacter(this.value); this.blur()">
+	<input value="%" type="button" onclick="addCharacter(this.value); this.blur()">
+	<input value="*" type="button" onclick="addCharacter(this.value); this.blur()"><br>
+	<input value="7" type="button" onclick="addCharacter(this.value); this.blur()">
+	<input value="8" type="button" onclick="addCharacter(this.value); this.blur()">
+	<input value="9" type="button" onclick="addCharacter(this.value); this.blur()">
+	<input value="/" type="button" onclick="addCharacter(this.value); this.blur()"><br>
+	<input value="4" type="button" onclick="addCharacter(this.value); this.blur()">
+	<input value="5" type="button" onclick="addCharacter(this.value); this.blur()">
+	<input value="6" type="button" onclick="addCharacter(this.value); this.blur()">
+	<input value="+" type="button" onclick="addCharacter(this.value); this.blur()"><br>
+	<input value="1" type="button" onclick="addCharacter(this.value); this.blur()">
+	<input value="2" type="button" onclick="addCharacter(this.value); this.blur()">
+	<input value="3" type="button" onclick="addCharacter(this.value); this.blur()">
+	<input value="-" type="button" onclick="addCharacter(this.value); this.blur()"><br>
+	<input value="0" type="button" onclick="addCharacter(this.value); this.blur()">
+	<input value="." type="button" onclick="addCharacter(this.value); this.blur()">
+	<input value="CE" type="button" onclick="clearText()">
+	<input id="eq" value="=" type="button" onclick="calculate()">
+</body>
+</html>
