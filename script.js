@@ -94,6 +94,7 @@ function calculate() {
 				var mayBePoint = true;
 				while ((!isNaN(expr[i]) || (expr[i] == '.')) && (i < expr.length)) {
 					if (expr[i] == ".") {
+						//не больше одной точки в числе
 						if (!mayBePoint) {
 							expression.value = "Ошибка";
 							return 0;
